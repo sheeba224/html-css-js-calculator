@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    body {
+      background-color: black;
+    }
+    .calculator {
+      width: 300px;
+      height: 400px;
+      background-color: #444;
+      margin: 50px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #000;
+    }
+   
+    .display {
+      width: 97%;
+      height: 100px;
+      background-color: #eee;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      text-align: right;
+      padding: 5px;
+      font-size: 40px;
+    }
+   
+    .button {
+      width: 60px;
+      height: 50px;
+      background-color: #fff;
+      margin: 5px;
+      border-radius: 8px;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px #000;
+    }
+   
+    .equal {
+      background-color: orange;
+    }
+    </style>
+    </head>
+    <body>
+   
+    <div class="calculator">
+      <input type="text" class="display" id="display" value="" />
+      <div class="buttons">
+        <button class="button" onclick="changeDisplay('0');">0</button>
+        <button class="button" onclick="clearDisplay();">C</button>
+        <button class="button" onclick="changeDisplay('+');">+</button>
+        <button class="button" onclick="changeDisplay('/');">/</button>
+        <button class="button" onclick="changeDisplay('1');">1</button>
+        <button class="button" onclick="changeDisplay('2');">2</button>
+        <button class="button" onclick="changeDisplay('3');">3</button>
+        <button class="button" onclick="changeDisplay('-');">-</button>
+        <button class="button" onclick="changeDisplay('4');">4</button>
+        <button class="button" onclick="changeDisplay('5');">5</button>
+        <button class="button" onclick="changeDisplay('6');">6</button>
+        <button class="button" onclick="changeDisplay('*');">x</button>
+        <button class="button" onclick="changeDisplay('7');">7</button>
+        <button class="button" onclick="changeDisplay('8');">8</button>
+        <button class="button" onclick="changeDisplay('9');">9</button>
+        <button class="button equal" onclick="calculate();">=</button>
+      </div>
+    </div>
+   
+    </body>
+    </html>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
